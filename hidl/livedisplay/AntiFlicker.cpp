@@ -21,7 +21,7 @@
 #include <fstream>
 
 namespace vendor {
-namespace lineage {
+namespace mokee {
 namespace livedisplay {
 namespace V2_1 {
 namespace implementation {
@@ -47,5 +47,5 @@ Return<bool> AntiFlicker::setEnabled(bool enabled) {
 }  // namespace implementation
 }  // namespace V2_1
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace mokee
 }  // namespace vendor

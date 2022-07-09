@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.powershare@1.0-service.oneplus"
+#define LOG_TAG "vendor.mokee.powershare@1.0-service.oneplus"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -24,8 +24,8 @@
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using vendor::lineage::powershare::V1_0::IPowerShare;
-using vendor::lineage::powershare::V1_0::implementation::PowerShare;
+using vendor::mokee::powershare::V1_0::IPowerShare;
+using vendor::mokee::powershare::V1_0::implementation::PowerShare;
 
 using android::OK;
 using android::status_t;

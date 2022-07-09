@@ -13,32 +13,32 @@
 // limitations under the License.
 
 filegroup {
-    name: "vendor.lineage.livedisplay@2.1-oneplus-af",
+    name: "vendor.mokee.livedisplay@2.1-oneplus-af",
     srcs: ["AntiFlicker.cpp"],
 }
 
 filegroup {
-    name: "vendor.lineage.livedisplay@2.1-oneplus-se",
+    name: "vendor.mokee.livedisplay@2.1-oneplus-se",
     srcs: ["SunlightEnhancement.cpp"],
 }
 
 cc_library_headers {
-    name: "vendor.lineage.livedisplay@2.1-oneplus-headers",
+    name: "vendor.mokee.livedisplay@2.1-oneplus-headers",
     vendor_available: true,
     export_include_dirs: ["include"],
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.oneplus",
+    name: "vendor.mokee.livedisplay@2.1-service.oneplus",
     defaults: ["hidl_defaults"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.oneplus.rc"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oneplus.xml"],
+    init_rc: ["vendor.mokee.livedisplay@2.1-service.oneplus.rc"],
+    vintf_fragments: ["vendor.mokee.livedisplay@2.1-service.oneplus.xml"],
     relative_install_path: "hw",
     srcs: [
-        ":vendor.lineage.livedisplay@2.0-sdm-pa",
-        ":vendor.lineage.livedisplay@2.0-sdm-utils",
-        ":vendor.lineage.livedisplay@2.1-oneplus-af",
-        ":vendor.lineage.livedisplay@2.1-oneplus-se",
+        ":vendor.mokee.livedisplay@2.0-sdm-pa",
+        ":vendor.mokee.livedisplay@2.0-sdm-utils",
+        ":vendor.mokee.livedisplay@2.1-oneplus-af",
+        ":vendor.mokee.livedisplay@2.1-oneplus-se",
         "service.cpp",
     ],
     shared_libs: [
@@ -46,12 +46,12 @@ cc_binary {
         "libbinder",
         "libhidlbase",
         "libutils",
-        "vendor.lineage.livedisplay@2.0",
-        "vendor.lineage.livedisplay@2.1",
+        "vendor.mokee.livedisplay@2.0",
+        "vendor.mokee.livedisplay@2.1",
     ],
     header_libs: [
-        "vendor.lineage.livedisplay@2.0-sdm-headers",
-        "vendor.lineage.livedisplay@2.1-oneplus-headers",
+        "vendor.mokee.livedisplay@2.0-sdm-headers",
+        "vendor.mokee.livedisplay@2.1-oneplus-headers",
     ],
     proprietary: true,
 }

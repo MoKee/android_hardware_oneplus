@@ -31,14 +31,14 @@ oneplus_powershare_hal_cc_defaults {
 }
 
 cc_binary {
-    name: "vendor.lineage.powershare@1.0-service.oneplus",
+    name: "vendor.mokee.powershare@1.0-service.oneplus",
     defaults: [
         "hidl_defaults",
         "oneplus_powershare_hal_defaults",
     ],
     relative_install_path: "hw",
-    init_rc: ["vendor.lineage.powershare@1.0-service.oneplus.rc"],
-    vintf_fragments: ["vendor.lineage.powershare@1.0-service.oneplus.xml"],
+    init_rc: ["vendor.mokee.powershare@1.0-service.oneplus.rc"],
+    vintf_fragments: ["vendor.mokee.powershare@1.0-service.oneplus.xml"],
     srcs: [
         "service.cpp",
         "PowerShare.cpp",
@@ -49,7 +49,7 @@ cc_binary {
         "libhidlbase",
         "liblog",
         "libutils",
-        "vendor.lineage.powershare@1.0",
+        "vendor.mokee.powershare@1.0",
     ],
     proprietary: true,
 }

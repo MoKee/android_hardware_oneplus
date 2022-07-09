@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_1_ANTIFLICKER_H
-#define VENDOR_LINEAGE_LIVEDISPLAY_V2_1_ANTIFLICKER_H
+#ifndef VENDOR_MOKEE_LIVEDISPLAY_V2_1_ANTIFLICKER_H
+#define VENDOR_MOKEE_LIVEDISPLAY_V2_1_ANTIFLICKER_H
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/lineage/livedisplay/2.1/IAntiFlicker.h>
+#include <vendor/mokee/livedisplay/2.1/IAntiFlicker.h>
 
 namespace vendor {
-namespace lineage {
+namespace mokee {
 namespace livedisplay {
 namespace V2_1 {
 namespace implementation {
@@ -33,7 +33,7 @@ using ::android::sp;
 
 class AntiFlicker : public IAntiFlicker {
   public:
-    // Methods from ::vendor::lineage::livedisplay::V2_1::IAntiFlicker follow.
+    // Methods from ::vendor::mokee::livedisplay::V2_1::IAntiFlicker follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 };
@@ -41,7 +41,7 @@ class AntiFlicker : public IAntiFlicker {
 }  // namespace implementation
 }  // namespace V2_1
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace mokee
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_1_ANTIFLICKER_H
+#endif  // VENDOR_MOKEE_LIVEDISPLAY_V2_1_ANTIFLICKER_H
